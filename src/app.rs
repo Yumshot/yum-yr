@@ -5,10 +5,10 @@ use yew_router::prelude::*;
 enum Route {
     #[at("/yum-yr/")]
     Home,
-    #[at("/yum-yr/secure")]
+    #[at("/secure")]
     Secure,
     #[not_found]
-    #[at("/yum-yr/404")]
+    #[at("/404")]
     NotFound,
 }
 
