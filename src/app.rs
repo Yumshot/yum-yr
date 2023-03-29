@@ -10,7 +10,7 @@ mod navbar;
 fn switch(routes: routes::Route) -> Html {
     match routes {
         routes::Route::Home => html! { <home::Home /> },
-        // routes::Route::Projects => html! { <projects::Projects /> },
+        routes::Route::Projects => html! { <projects::Projects /> },
         routes::Route::Secure => html! {
             <secure::Secure />
         },

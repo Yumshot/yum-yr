@@ -766,16 +766,16 @@ function getImports() {
         const ret = wasm.memory;
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper637 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 292, __wbg_adapter_30);
+    imports.wbg.__wbindgen_closure_wrapper657 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 305, __wbg_adapter_30);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper988 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 406, __wbg_adapter_33);
+    imports.wbg.__wbindgen_closure_wrapper1008 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 419, __wbg_adapter_33);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper1038 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 433, __wbg_adapter_36);
+    imports.wbg.__wbindgen_closure_wrapper1058 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 446, __wbg_adapter_36);
         return addHeapObject(ret);
     };
 
@@ -814,7 +814,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('yum-yr-60a4e8c38e89aefa_bg.wasm', import.meta.url);
+        input = new URL('yum-yr-7af8fd51f82eedd7_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 

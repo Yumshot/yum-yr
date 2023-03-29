@@ -4,10 +4,12 @@ use yew_router::prelude::*;
 pub enum Route {
     #[at("/yum-yr/")]
     Home,
-    #[at("/secure")]
+    #[at("/yum-yr/secure")]
     Secure,
+    #[at("/yum-yr/projects")]
+    Projects,
     #[not_found]
-    #[at("/404")]
+    #[at("/yum-yr/404")]
     NotFound,
 }
 // DEBUG / LOCAL ENUM
