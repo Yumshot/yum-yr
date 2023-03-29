@@ -3,12 +3,12 @@ use yew_router::prelude::*;
 
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
-    #[at("/")]
+    #[at("/yum-yr/")]
     Home,
-    #[at("/secure")]
+    #[at("/yum-yr/secure")]
     Secure,
     #[not_found]
-    #[at("/404")]
+    #[at("/yum-yr/404")]
     NotFound,
 }
 
