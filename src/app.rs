@@ -36,8 +36,8 @@ fn secure() -> Html {
 
 fn home_layout() -> Html {
 let container_one = classes!("flex", "flex-col", "items-center", "justify-center", "min-h-screen");
-let heading_text = classes!("text-caption", "text-xl", "float-left", "header-text", "text-white");
-let headline_text_titles = classes!("bg-o_light", "p-4", "rounded-lg", "shadow-md", "w-3/4", "default-text");
+let heading_text = classes!("text-xl", "float-left", "header-text", "text-white");
+let headline_text_titles = classes!("bg-accent", "p-4", "rounded-lg", "shadow-md", "w-most", "default-text");
 let intro_headline = classes!("block", "font-sans", "text-base", "font-light", "uppercase", "leading-relaxed",  "text-inherit", "antialiased");
 let intro_padding = classes!("pt-5");
 let para_text = classes!(String::from("p-8 block font-sans text-sm font-light leading-normal text-inherit antialiased"));
@@ -57,7 +57,7 @@ let _wasm_svg_props = SvgProps {
             <>
             <div class={container_one}>
             //
-            <div class={classes!(String::from("m-1.5 w-3/5"))}>
+            <div class={classes!(String::from("m-min w-most"))}>
             <strong class={heading_text}>{"HELLO ✌"} </strong>
             </div>
             //
@@ -81,10 +81,10 @@ let _wasm_svg_props = SvgProps {
             //
             <div class={classes!(String::from("uppercase header-text m-2 text-white"))}>
             {"{"}
-            <strong class={classes!(String::from("uppercase p-2.5 rounded-lg shadow-md header-text m-5 bg-o_light"))}>
+            <strong class={classes!(String::from("uppercase p-5 rounded-lg shadow-md header-text m-5 bg-accent"))}>
             {"Rust"}</strong>
             {"&&"}
-            <strong class={classes!(String::from("uppercase p-2.5 rounded-lg shadow-md header-text m-5 bg-o_light"))}>
+            <strong class={classes!(String::from("uppercase p-5 rounded-lg shadow-md header-text m-5 bg-accent"))}>
             {"WebAssembly"}</strong>   
             {"}"}
                </div>  
@@ -118,7 +118,7 @@ fn switch(routes: Route) -> Html {
 pub fn App() -> Html {
     html! {
         <BrowserRouter>
-            <div class={classes!(String::from("bg-white dark:bg-o_dark h-full text-white"))}>
+            <div class={classes!(String::from("bg-dark h-full text-white"))}>
                        <Switch <Route> render={switch} /> // <- must be child of <BrowserRouter>
                  </div>
         </BrowserRouter>
