@@ -14,7 +14,7 @@ fn switch(routes: routes::Route) -> Html {
         routes::Route::Secure => html! {
             <secure::Secure />
         },
-        routes::Route::NotFound => html! { <h1>{ "404" }</h1> },
+        routes::Route::NotFound => html! { <h1>{ "404 DOOD" }</h1> },
     }
 }
 
