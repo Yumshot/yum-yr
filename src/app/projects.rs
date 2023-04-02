@@ -20,7 +20,22 @@ pub fn svg_icon() -> Html {
     }
 }
 
+struct ProjectStructure {
+    name: String,
+    description: String,
+}
 
+
+
+fn generate_project_list() -> Vec<i32> {
+let mut my_vec: Vec<i32> = Vec::new();
+my_vec.push(1);
+my_vec.push(2);
+my_vec.push(3);
+my_vec.push(4);
+my_vec.push(5);
+return my_vec
+}
 
 #[function_component(Projects)]
 pub fn project_view() -> Html {
