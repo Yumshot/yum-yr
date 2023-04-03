@@ -40,7 +40,7 @@ pub fn create_navbar() -> Html {
     html!(<div class="navbar">
     <div class="logo"><a href="/">{ logo_icon() }</a></div>
     <div class="links">
-    <a href="/projects">{file_tree_icon()}</a>
+    <a href="/yum-yr/projects">{file_tree_icon()}</a>
         <a href="https://github.com/Yumshot" target="blank">{github_icon()}</a>
     </div>
   </div>)
