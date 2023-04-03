@@ -816,7 +816,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('yum-yr-1fa4684d11c9fe43_bg.wasm', import.meta.url);
+        input = new URL('yum-yr-412ff3fe2d1f379a_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
