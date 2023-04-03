@@ -3,11 +3,11 @@ use yew_router::prelude::*;
 pub enum Route {
     #[at("/")]
     Home,
-    #[at("/projects")]
+    #[at("/yum-yr/projects")]
     Projects,
     #[at("/secure")]
     Secure,
     #[not_found]
-    #[at("/404")]
+    #[at("/yum-yr/404")]
     NotFound,
 }
