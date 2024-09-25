@@ -7,7 +7,6 @@ pub struct SvgProps {
     pub src: String,
 }
 
-
 #[function_component(Home)]
 pub fn home_layout() -> Html {
     let container_one = classes!(
@@ -37,19 +36,25 @@ pub fn home_layout() -> Html {
         "antialiased"
     );
     let intro_padding = classes!("pt-5");
-    let para_text = classes!(String::from(
-        "p-8 block font-sans text-sm font-light leading-normal text-inherit antialiased"
-    ));
+    let para_text = classes!(
+        String::from(
+            "p-8 block font-sans text-sm font-light leading-normal text-inherit antialiased"
+        )
+    );
 
     let _rust_svg_props = SvgProps {
-    class: String::from("h-6 w-6"),
-    src: String::from("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/1200px-Rust_programming_language_black_logo.svg.png"),
-};
+        class: String::from("h-6 w-6"),
+        src: String::from(
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/1200px-Rust_programming_language_black_logo.svg.png"
+        ),
+    };
 
     let _wasm_svg_props = SvgProps {
-    class: String::from("h-6 w-6"),
-    src: String::from("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/WebAssembly_Logo.svg/1200px-WebAssembly_Logo.svg.png"),
-};
+        class: String::from("h-6 w-6"),
+        src: String::from(
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/WebAssembly_Logo.svg/1200px-WebAssembly_Logo.svg.png"
+        ),
+    };
 
     html! {
         <>
@@ -64,13 +69,13 @@ pub fn home_layout() -> Html {
         </div>
         //
         <p class={classes!(intro_headline.clone(), intro_padding)}>
-        {"[full stack developer] .. 30% .. 70% .. 100% -> ✅"}
+        {"[full stack developer] .. 25% .. 50% .. 100% -> ✅"}
         </p>
         <p class={intro_headline.clone()}>
-        {"systems engineer .. 30% .. 69% .. 100% -> ✅"}
+        {"systems engineer .. 24% .. 69% .. 100% -> ✅"}
         </p>
         <p class={intro_headline.clone()}>
-        {"(fake it till i make it) .. 30% .. 69% .. 420% -> ✅"}
+        {"(fake it till i make it) .. 24% .. 69% .. 420% -> ✅"}
         </p>
         //
         <p class={classes!(String::from("text-center m-8 underline"))}>
